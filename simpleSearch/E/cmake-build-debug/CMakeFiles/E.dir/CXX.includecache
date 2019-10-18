@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/zr/codes/kuangbinACM/simpleSearch/E/main.cpp
+iostream
+-
+vector
+-
+queue
+-
+cstring
+-
+
