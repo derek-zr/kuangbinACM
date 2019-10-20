@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/zhengr/Documents/codes/kuangbinACM/shortestPath/A/main.cpp
+iostream
+-
+vector
+-
+queue
+-
+cstring
+-
+climits
+-
+

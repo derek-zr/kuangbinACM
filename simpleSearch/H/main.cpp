@@ -97,6 +97,7 @@ int main() {
     for (int i = 0; i < s.size(); ++i) {
         State tmp = s[i];
         //遍历各种操作
+        //1. 当A容器中当前的水小于其容量时，可以fill A，也可以从B中pour出到A
         if (tmp.A < a) {
             if (!visited[a][s[i].B]) {
                 visited[a][s[i].B] = true;
@@ -119,6 +120,7 @@ int main() {
                 }
             }
         }
+        //2. 当B容器中当前的水小于其容量时，可以fill B，也可以从A中pour出到B
         if (tmp.B < b) {
             if (!visited[s[i].A][b]) {
                 visited[s[i].A][b] = true;
@@ -129,6 +131,7 @@ int main() {
                     return 0;
                 }
             }
+            //3. 只要AB不为空，那么都可以进行drop操作
             if (s[i].A) {
                 int t = min(b-s[i].B, s[i].A);
                 //pour from A to B
